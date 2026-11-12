@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Maombi ya Mkopo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <b>MAOMBI YA MKOPO</b>
+    <small>Huduma huru ya maombi</small>
+  </header>
+
+  <main class="card">
+    <div class="step">HATUA YA 1 · KIASI CHA MKOPO</div>
+
+    <h1>Chagua kiasi unachotaka kuomba</h1>
+
+    <p>Buruta kitelezi kuchagua kiasi.</p>
+
+    <strong class="amount" id="amountText">
+      50,000 TZS
+    </strong>
+
+    <input
+      id="amount"
+      type="range"
+      min="10000"
+      max="1000000"
+      step="10000"
+      value="50000"
+    >
+
+    <div class="between">
+      <span>10,000 TZS</span>
+      <span>1,000,000 TZS</span>
+    </div>
+
+    <button id="next">Endelea</button>
+
+    <p class="warning">
+      Huu ni mfumo huru wa maombi, si tovuti rasmi ya Halotel.
+      Kutuma ombi hakumaanishi mkopo umeidhinishwa.
+    </p>
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
