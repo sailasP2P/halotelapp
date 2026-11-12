@@ -1,0 +1,166 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f2f4f7;
+  color: #1d2939;
+  font: 16px/1.5 Arial, sans-serif;
+}
+
+header {
+  background: #a91e2b;
+  color: white;
+  padding: 18px max(20px, calc((100% - 680px) / 2));
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+header small {
+  font-size: 12px;
+}
+
+.card {
+  background: white;
+  max-width: 680px;
+  margin: 32px auto;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 28px #17203312;
+}
+
+.step {
+  font-size: 12px;
+  font-weight: bold;
+  color: #a91e2b;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 27px;
+  margin: 12px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+input:not([type=range]):not([type=checkbox]),
+textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  margin-top: 6px;
+  font: inherit;
+}
+
+input[type=range] {
+  width: 100%;
+  accent-color: #a91e2b;
+}
+
+.amount {
+  display: block;
+  text-align: center;
+  color: #16834b;
+  font-size: 34px;
+  margin: 24px;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.consent {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.consent input {
+  margin-right: 7px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  border-radius: 9px;
+  background: #a91e2b;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.secondary {
+  background: #586579;
+}
+
+.warning {
+  background: #fff4dc;
+  color: #765315;
+  padding: 13px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+a {
+  color: #a91e2b;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+}
+
+dt {
+  font-weight: bold;
+  color: #64748b;
+}
+
+dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.application {
+  border: 1px solid #dce2ea;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 14px 0;
+}
+
+.application button {
+  width: auto;
+  padding: 10px 14px;
+  margin-right: 8px;
+}
+
+@media (max-width: 720px) {
+  .card {
+    margin: 16px;
+    padding: 21px;
+  }
+
+  dl {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  dd {
+    margin-bottom: 9px;
+  }
+}
