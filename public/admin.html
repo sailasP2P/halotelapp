@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Usimamizi wa Maombi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <b>USIMAMIZI WA MAOMBI</b>
+    <small>Sehemu ya msimamizi</small>
+  </header>
+
+  <main class="card">
+    <h1>Kuingia kwa msimamizi</h1>
+
+    <form method="post" action="/admin/login">
+      <label>
+        Jina la mtumiaji
+        <input
+          name="username"
+          required
+          autocomplete="username"
+        >
+      </label>
+
+      <label>
+        Nenosiri
+        <input
+          name="password"
+          type="password"
+          required
+          autocomplete="current-password"
+        >
+      </label>
+
+      <button>Ingia</button>
+    </form>
+
+    <hr>
+
+    <h2>Maombi yaliyopokelewa</h2>
+
+    <div id="adminList">
+      Ingia ili kuona maombi.
+    </div>
+
+    <form method="post" action="/admin/logout">
+      <button class="secondary">Toka</button>
+    </form>
+
+    <p class="warning">
+      Linda akaunti hii. Usishiriki nenosiri la msimamizi.
+    </p>
+  </main>
+
+  <script src="admin.js"></script>
+
+</body>
+</html>
