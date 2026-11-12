@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Taarifa za Mwombaji</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <b>MAOMBI YA MKOPO</b>
+    <small>Hatua ya 2</small>
+  </header>
+
+  <main class="card">
+    <div class="step">HATUA YA 2 · TAARIFA ZA MWOMBAJI</div>
+    <h1>Jaza taarifa zako</h1>
+
+    <form id="details">
+      <label>Jina kamili
+        <input id="fullName" required maxlength="100">
+      </label>
+
+      <label>Msimbo wa nchi
+        <input id="countryCode" required value="+254" maxlength="6">
+      </label>
+
+      <label>Nambari ya simu
+        <input id="phone" required type="tel" maxlength="25">
+      </label>
+
+      <label>Nchi
+        <input id="country" required value="Kenya">
+      </label>
+
+      <label>Sababu ya mkopo
+        <textarea id="purpose" required maxlength="1000" rows="4"></textarea>
+      </label>
+
+      <label class="consent">
+        <input id="consent" type="checkbox" required>
+        Nimeelewa matumizi ya taarifa zangu.
+      </label>
+
+      <button>Endelea kukagua</button>
+    </form>
+
+    <a href="index.html">← Rudi</a>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
